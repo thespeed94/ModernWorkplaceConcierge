@@ -8,11 +8,11 @@
     <div class="jumbotron">
         <h1>Modern Workplace Concierge</h1>
         <p class="lead">Your concierge of choice to manage a modern workplace based on Microsoft 365 services.</p>
+        <h2>Chupa pinga</h2>
         @if (Request.IsAuthenticated)
         {
             <h4>Welcome @ViewBag.User.DisplayName!</h4>
             <p>Use the navigation bar at the top of the page to get started.</p>
-            <h2>Chupa pinga</h2>
             <a href="https://github.com/nicolonsky/ModernWorkplaceConcierge" target="_blank" class="btn btn-dark btn-large">
                 <i class="fab fa-github"></i>
                 <span>View this project on GitHub</span>
@@ -20,7 +20,6 @@
         }
         else
         {
-            <h2>Chupa pinga</h2>
             <a href="@Url.Action("SignIn", "Account")" class="btn btn-large SignInButton">
                 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="80%" viewBox="0 0 3278 522" class="SignInButton">
                     <style type="text/css">.fil0:hover {fill: #4B4B4B;} .fnt0 {font-size: 260px;font-family: 'Segoe UI Semibold', 'Segoe UI'; text-decoration: none;}</style>
